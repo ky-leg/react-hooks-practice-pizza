@@ -46,23 +46,23 @@ function PizzaForm({editPizza, handleSubmit, handleChange}) {
             
             className="form-check">
             <input
-              onChange={e => handleChange(e.target.value, e.target.name)} 
+              onChange={e => handleChange(true, e.target.name)} 
               className="form-check-input"
               type="radio"
               name="vegetarian"
               value="Vegetarian"
-              checked={vegetarian? "checked":null}
+              checked={vegetarian}
             />
             <label className="form-check-label">Vegetarian</label>
           </div>
           <div className="form-check">
             <input
-              onChange={e => handleChange(e.target.value, e.target.name)} 
+              onChange={e => handleChange(false, e.target.name)} 
               className="form-check-input"
               type="radio"
               name="vegetarian"
-              value="Not Vegetarian"
-              checked={(vegetarian===false)? null:"checked"}
+              value="Non Vegetarian"
+              checked={!vegetarian}
             />
             <label className="form-check-label">Not Vegetarian</label>
           </div>

@@ -3,7 +3,7 @@ import React from "react";
 function Pizza({pizza, editPizza}) {
 
   const {size, topping, vegetarian} = pizza
-  console.log(pizza)
+  // console.log(pizza)
   return (
     <tr>
       <td>{topping}</td>

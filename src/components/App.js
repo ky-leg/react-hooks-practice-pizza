@@ -32,12 +32,9 @@ function App() {
     }
     if (change==="vegetarian"){
       console.log("change veg to", value, "!")
-      if (value==="Vegetarian"){
-        setEditPizza({...editPizza, vegetarian: true})
-      }
-      if (value==="Not Vegetarian"){
-        setEditPizza({...editPizza, vegetarian: false})
-      }
+      setEditPizza({...editPizza, vegetarian: value})
+
+      
     }
   }
  
